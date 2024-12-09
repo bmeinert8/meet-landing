@@ -66,7 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 /* TYPOGRAPHY */
 
 .text-preset-1 {
-  color: var(--Slate-900);
   font-size: 2.5rem;
   font-size: clamp(2.5rem, 2.071428571428571rem + 2.142857142857143vw, 4rem);
   font-weight: 900;
@@ -74,7 +73,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-preset-2 {
-  color: var(--Slate-600);
   font-size: 1rem;
   font-size: clamp(1rem, 0.9642857142857143rem + 0.17857142857142858vw, 1.125rem);
   font-weight: 500;
@@ -88,8 +86,13 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 150%;
 }
 
+.number-text {
+  color: var(--Slate-600);
+  font-size: 1rem;
+  font-weight: 900;
+}
+
 .text-preset-3 {
-  color: var(--Cyan-600);
   font-size: 0.75rem;
   font-size: clamp(0.75rem, 0.6785714285714286rem + 0.35714285714285715vw, 1rem);
   font-weight: 900;
@@ -99,11 +102,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .text-preset-4 {
-  color: var(--Slate-900);
   font-size: 2rem;
   font-size: clamp(2rem, 1.8571428571428572rem + 0.7142857142857143vw, 2.5rem);
   font-weight: 900;
   line-height: 110%;
+  opacity: 1;
 }
 
 /* LAYOUT */
@@ -147,8 +150,13 @@ h1, h2, h3, h4, h5, h6 {
   padding:0 2rem 1.5rem 2rem;
 }
 
+.hero-text h1 {
+  color: var(--Slate-900);
+}
+
 .hero-text p {
- align-self: center;
+  color: var(--Slate-600);
+  align-self: center;
 }
 
 .button-container{
@@ -185,6 +193,30 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main info section */
 
+.line {
+  width: 0.06rem;
+  height: 5rem;
+  background-color: var(--Slate-300);
+}
+
+.circle {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid var(--Slate-300);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-box {
+  width: 3.5rem;
+  height: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .main-info-container {
   display: flex;
   flex-direction: column;
@@ -212,7 +244,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   text-align: center;
   align-self: stretch;
-  max-width: 31.5rem;
 }
 
 .title-container {
@@ -221,4 +252,61 @@ h1, h2, h3, h4, h5, h6 {
   gap: 1rem;
 }
 
+.title-container h2 {
+  color: var(--Cyan-600);
+}
 
+.title-container h3 {
+  color: var(--Slate-900);
+}
+
+.main-section-text p {
+  color: var(--Slate-600);
+}
+
+
+
+/* Footer Section */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+}
+
+.footer-container {
+  position: relative;
+  height: 23.38rem;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  text-align: center;
+  background-image: url("./assets/mobile/image-footer.jpg");
+  background-color: var(--Cyan-600);
+  background-blend-mode: multiply;
+  background-size: cover;
+  color: var(--White);
+}
+
+.footer-container .btn-1 {
+  background-color: var(--Purple-600);
+}
+
+.footer-container  {
+  color: var(--White);
+}
+
+
+.btn-1 a {
+  text-decoration: none;
+  color: var(--White);
+}
+
+.footer-container span {
+  color: var(--Purple-300);
+}
