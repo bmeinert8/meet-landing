@@ -1,0 +1,52 @@
+@media (min-width: 768px) {
+  .hero-text > h1 {
+    width: 50%;
+    align-self: center;
+  }
+
+  .hero-text > p {
+    width: 65%;
+    align-self: center;
+  }
+
+  .button-container {
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+
+  .main-info-container{
+    padding-top: 5rem;
+  }
+
+  .picture-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .title-container > h3{
+    width: 80%;
+    text-wrap: wrap;
+    align-self: center;
+  }
+
+  .main-section-text > p {
+    width: 72%;
+    align-self: center;
+  }
+
+  .footer-number {
+    bottom: -45.2rem;
+  }
+
+  .footer-container {
+    height: 20rem;
+    background-image: url("./assets/tablet/image-footer.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer-container > p {
+    width: 70%;
+  }
+
+}
