@@ -1,3 +1,21 @@
+@media (min-width: 320px) {
+  .footer-number {
+    bottom: -48rem;
+  }
+}
+
+@media (min-width: 375px) {
+  .footer-number {
+    bottom: -49rem;
+  }
+}
+
+@media (min-width: 425px) {
+  .footer-number {
+    bottom: -52rem;
+  }
+}
+
 @media (min-width: 768px) {
   .hero-text > h1 {
     width: 50%;
@@ -49,4 +67,40 @@
     width: 70%;
   }
 
+}
+
+@media (min-width: 1024px) {
+  .footer-number {
+    bottom: -56rem;
+  }
+
+  .footer-container {
+    height: 19.5rem;
+    background-image: url("./assets/desktop/image-footer.jpg");
+    background-position: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .footer-number {
+    bottom: -77rem;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    gap:1.5rem;
+  }
+
+  .footer-container > h2 {
+    width: 28%;
+    text-wrap: wrap;
+    text-align: left;
+    padding-right: 1rem;
+  }
+
+  .footer-container > p {
+    width: 26%;
+    text-wrap: wrap;
+    text-align: left;
+  }
 }

@@ -314,6 +314,6 @@ footer{
 
 .footer-number {
   position: absolute;
-  bottom: -49.5rem; /* Adjust this value as needed */
+  bottom: -55rem; /* Adjust this value as needed */
   z-index: 1; /* Ensure it sits on top */
 }
