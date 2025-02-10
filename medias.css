@@ -82,8 +82,28 @@
 }
 
 @media (min-width: 1440px) {
+  .desktop-hero{
+    display: flex;
+    margin-top: 5rem;
+  }
+
+  .desktop-hero > img {
+    height: 20rem;
+  }
+
+  .hero-text > h1 {
+    width: 90%;
+  }
+
+  .hero-text > p {
+    width: 80%;
+  }
+  .mobile-tablet-hero{
+    display: none;
+  }
+
   .footer-number {
-    bottom: -77rem;
+    bottom: -37.5rem;
   }
 
   .footer-container {
@@ -102,5 +122,17 @@
     width: 26%;
     text-wrap: wrap;
     text-align: left;
+  }
+}
+
+@media (max-width: 1439px) {
+  .desktop-hero {
+    display: none;
+  }
+
+  .mobile-tablet-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
